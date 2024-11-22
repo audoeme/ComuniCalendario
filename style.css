@@ -1,0 +1,291 @@
+/* Configuração global */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  /* Carrossel */
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    position: center;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    flex-shrink: 0; 
+    border-radius: 10px;
+  }
+
+  /* Estilo para o texto abaixo do carrossel */
+.carousel-description {
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+  }
+  
+  .carousel-description h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel-description p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  
+  
+  /* Eventos destacados */
+  
+  .highlight-events {
+    padding: 1rem;
+    background-color: #f3f3f3;
+  }
+  
+  .highlight-events h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .event-card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .event-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .event-card p {
+    margin: 0.3rem 0;
+  }
+  
+  .event-card .btn-dropdown {
+    margin-top: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .event-card .btn-dropdown:hover {
+    background-color: #45a049;
+  }
+
+  
+  .add-event-link {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .add-event-link {
+    display: block;
+    margin: 2rem auto; 
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 300px; 
+    width: 90%; /* Adaptar tamanho da tela */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-event-link:hover {
+    background-color: #45a049;
+  }
+
+  h2 {
+    text-align: center; /* Centraliza todos os h2 */
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .events {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .events h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+  }
+  
+  .all-events {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .event-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #ffffff;
+    font-size: 1rem;
+    width: 300px; /* Define a largura fixa para todos os cards */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .event-date,
+  .event-status {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .event-status {
+    font-style: italic;
+  }
+  
+  .event-item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  
+  
+  .add-event button {
+    width: 100%; 
+    max-width: 300px; 
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 1rem auto; /* Centraliza o botão */
+    display: block; /* Alinhamento central sempre! */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-event {
+    display: flex; /* Usamos flexbox para centralizar */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente dentro da seção */
+    text-align: center; /* Centraliza o texto */
+    margin: 2rem auto; /* Adiciona espaçamento ao redor */
+  }
+  
+  .add-event-description {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .add-event button {
+    width: 100%; /* Botão ocupa toda a largura disponível */
+    max-width: 300px; /* Limita a largura máxima */
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-event button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-event button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4CAF50">
+  <link rel="stylesheet" href="style.css">
+  <title>ComuniCalendário</title>
+</head>
+<body>
+  <header>
+    <h1>📅 ComuniCalendário</h1>
+  </header>
+  <main>
+    <!-- Carrossel -->
+    <section class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="./src/images/apoio_800x800.jpg" alt="Slide 1">
+            <img src="./src/images/corrida_800x800" alt="Slide 2">
+            <img src="./src/images/danca_800x800" alt="Slide 3">
+            <img src="./src/images/horta_800x800" alt="Slide 4">
+          </div>
+        </div>
+      </section>
+      
+      <!-- Texto abaixo do carrossel -->
+      <section class="carousel-description">
+        <h2>A Agenda compartilhada que traz todos para o mesmo ritmo.</h2>
+        <p>Uma ferramenta simples para te manter informado sobre as atividades e eventos pertinho de você.</p>
+      </section>
+      
+
+    <!-- Seção inicial com eventos destacados -->
+    <section class="highlight-events">
+      <h2>Eventos em Destaque</h2>
+      <div class="event-grid" id="highlight-events-container">
+        <!-- Eventos destacados serão adicionados dinamicamente -->
+      </div>
+    </section>
+
+    <p class="add-event-description">
+        Não encontrou o que procurava? 
+        Clique no botão abaixo para adicionar seu evento!
+      </p>
+      
+    <a href="add-event.html" class="add-event-link">Adicionar Evento</a>
+
+
+    <!-- Lista de eventos -->
+    <section class="events">
+        <h2>Todos os Eventos</h2>
+        <ul class="all-events">
+          <li class="event-item">
+            <span class="event-title">Brincadeiras Antigas para a Nova Geração</span>
+            <span class="event-date">20/11/2024</span>
+          </li>
+          <li class="event-item">
+            <span class="event-title">Atividades de Apoio aos Idosos</span>
+            <span class="event-date">24/09/2024</span>
+          </li>
+          <li class="event-item">
+            <span class="event-title">Caminhada da Paz</span>
+            <span class="event-date">21/10/2024</span>
+          </li>
+          <li class="event-item">
+            <span class="event-title">Horta Comunitária</span>
+            <span class="event-status">Em breve</span>
+          </li>
+          <li class="event-item">
+            <span class="event-title">Sábado Aulas de Corte e Costura</span>
+            <span class="event-status">Em breve</span>
+          </li>
+          <li class="event-item">
+            <span class="event-title">Campeonato de Xadrez</span>
+            <span class="event-status">Em breve</span>
+          </li>
+          <li class="event-item">
+            <span class="event-title">Doação de Alimentos para Natal</span>
+            <span class="event-status">Em breve</span>
+          </li>
+          <li class="event-item">
+            <span class="event-title">Visita à ONG Di Fiori</span>
+            <span class="event-status">Em breve</span>
+          </li>
+        </ul>
+      </section>     
+      
+      
+  </main>
+  <footer>
+    <p>ComuniCalendário © 2024</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
